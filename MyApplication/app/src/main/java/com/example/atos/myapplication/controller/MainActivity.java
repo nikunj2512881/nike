@@ -48,8 +48,7 @@ public class MainActivity extends BaseActivity implements CallBackInterface ,Cus
      //   PermissionUtils.requestPermissionFromActivity(this,Manifest.permission.WRITE_EXTERNAL_STORAGE);
 
         Log.d("tag","jenkins test");
-        Log.d("tag","jenkins test");
-        Log.d("tag","jenkins test");
+
 
         if (checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
             requestPermissions(new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, 1);
