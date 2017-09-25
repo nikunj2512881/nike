@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/loginbg"
+        tools:context="com.example.atos.myapplication.controller.MainActivity">
+
+
+        <ImageView
+            android:id="@+id/imageview"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/atoslogo"/>
+
+
+
+        <com.example.atos.myapplication.customclasses.CustomEditTextField
+            android:id="@+id/edittextemail"
+            android:textCursorDrawable = "@null"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25sp"
+            android:layout_marginRight="25sp"
+            android:layout_marginTop="12sp"
+            android:text="test"
+            android:hint="@string/username"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:gravity="left"
+            android:textSize="20sp"
+            android:layout_below="@+id/imageview"
+             />
+
+        <com.example.atos.myapplication.customclasses.CustomEditTextField
+            android:id="@+id/edittestpassword"
+            android:textCursorDrawable = "@null"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edittextemail"
+            android:layout_marginLeft="25sp"
+            android:layout_marginRight="25sp"
+            android:layout_marginTop="20sp"
+            android:hint="@string/password"
+            android:text="test"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:gravity="left"
+            android:inputType="textPassword"
+            android:textSize="20sp" />
+
+        <com.example.atos.myapplication.customclasses.CustomButton
+            android:id="@+id/buttonlogin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edittestpassword"
+            android:layout_marginLeft="25sp"
+            android:layout_marginRight="25sp"
+            android:layout_marginTop="20sp"
+            android:gravity="center"
+            android:text="@string/login"
+            android:textColor="@color/atos_blue"
+            android:textSize="20sp"
+           />
+
+        <com.example.atos.myapplication.customclasses.CustomTextView
+            android:id="@+id/textviewforgotpass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buttonlogin"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="20sp"
+            android:text="@string/forgotpwd"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <com.example.atos.myapplication.customclasses.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textviewforgotpass"
+            android:gravity="center"
+            android:paddingTop="20sp"
+            android:text="@string/account"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+
+            />
+
+
+    </RelativeLayout>
