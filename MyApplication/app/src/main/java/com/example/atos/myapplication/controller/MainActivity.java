@@ -11,6 +11,7 @@ import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
@@ -46,6 +47,7 @@ public class MainActivity extends BaseActivity implements CallBackInterface ,Cus
 
      //   PermissionUtils.requestPermissionFromActivity(this,Manifest.permission.WRITE_EXTERNAL_STORAGE);
 
+        Log.d("tag","jenkins test");
         if (checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
             requestPermissions(new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, 1);
         }
