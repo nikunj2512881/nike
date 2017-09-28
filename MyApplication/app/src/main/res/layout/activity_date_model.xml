@@ -15,16 +15,22 @@
         android:layout_marginTop="20dp"
         android:ems="10"
         android:hint="dd/MM/yyyy"
-        android:inputType="textPersonName" />
+        android:text="02/01/1994"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:enabled="false"/>
 
     <EditText
         android:id="@+id/endDate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="none"
         android:hint="dd/MM/yyyy"
-        android:layout_marginTop="20dp"/>
+        android:text="04/01/1994"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:enabled="false"/>
 
     <Button
         android:id="@+id/button"

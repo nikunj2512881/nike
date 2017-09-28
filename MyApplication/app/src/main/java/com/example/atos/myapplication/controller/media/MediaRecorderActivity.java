@@ -16,6 +16,7 @@ import android.util.Log;
 import android.view.TextureView;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.example.atos.myapplication.R;
 import com.example.atos.myapplication.customclasses.CameraHelper;
@@ -77,9 +78,11 @@ public class MediaRecorderActivity extends AppCompatActivity implements Activity
                 mCamera.lock();         // take camera access back from MediaRecorder
 
                 // inform the user that recording has stopped
-                setCaptureButtonText("Capture");
+                setCaptureButtonText("Start");
                 isRecording = false;
                 releaseCamera();
+                Toast.makeText(getApplicationContext(),"Video Saved to gallery..",Toast.LENGTH_SHORT).show();
+
                 // END_INCLUDE(stop_release_media_recorder)
 
             } else {
@@ -232,7 +235,6 @@ public class MediaRecorderActivity extends AppCompatActivity implements Activity
             }
             // inform the user that recording has started
             setCaptureButtonText("Stop");
-
         }
 
 
@@ -261,9 +263,11 @@ public class MediaRecorderActivity extends AppCompatActivity implements Activity
                 mCamera.lock();         // take camera access back from MediaRecorder
 
                 // inform the user that recording has stopped
-                setCaptureButtonText("Capture");
+                setCaptureButtonText("Start");
                 isRecording = false;
                 releaseCamera();
+                Toast.makeText(getApplicationContext(),"Video Saved to gallery..",Toast.LENGTH_SHORT).show();
+
                 // END_INCLUDE(stop_release_media_recorder)
 
             } else {
